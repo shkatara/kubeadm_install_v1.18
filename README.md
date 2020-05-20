@@ -22,7 +22,8 @@ Cgroup Driver: systemd ( not cgroups )
 ------------
 
 ------------
-Kubernetes Configuration
+Kubernetes Configuration \
+
 Kubeadm, Kubectl and Kubelet version: 1.18 ( git version v1.18.3 )
 ------------
 
@@ -35,10 +36,10 @@ Node Configuration
 
 1. As a requirement for your Linux Node’s iptables to correctly see bridged traffic, 
 
-cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
-net.bridge.bridge-nf-call-ip6tables = 1
-net.bridge.bridge-nf-call-iptables = 1
-EOF
+cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf \
+net.bridge.bridge-nf-call-ip6tables = 1 \
+net.bridge.bridge-nf-call-iptables = 1 \
+EOF \
 sudo sysctl --system
 
 2. Kubeadm does not need swap. Disable all swap and comment entry in fstab as well.
@@ -54,20 +55,20 @@ sudo modprobe br_netfilter
 Firewall Ports
 
 On master(all tcp)
-#########
-6443
-2379-2380
-10250	 
-10251	
-10252	
-9099(calico)
-#########
+######### \
+6443 \
+2379-2380 \
+10250	 \
+10251	\
+10252	\
+9099(calico) \ 
+#########	
 
 On worker(all tcp)
-#########
-10250
-30000-32767
-9099(calico)
+######### \
+10250 \ 
+30000-32767 \
+9099(calico) \
 #########
 
 Worst case scenario, if you still think it is not working after opening all the ports,
