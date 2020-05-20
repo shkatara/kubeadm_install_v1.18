@@ -8,7 +8,9 @@ This has been done on the following ISO.
 
 Both with the specs:
 
-- 6GB, 2 CPU, 20GB HDD
+- 6GB RAM 
+- 2 CPU
+- 20GB HDD
 
 -----------
 Docker Configuration
