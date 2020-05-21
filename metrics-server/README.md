@@ -24,8 +24,10 @@ Once the cluster is installed, to set the metrics up and running,
       . 
 
 
-3. After the changes are made, create the deployment
+5. After the changes are made, create the deployment
 
-kubectl create -f deployment.yml
-3. kubectl create -f service.yml
+kubectl create -f deployment.yml 
+
+
+6. kubectl create -f service.yml
 
