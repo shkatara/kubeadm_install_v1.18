@@ -13,15 +13,15 @@ Once the cluster is installed, to set the metrics up and running,
 
 4. Change the listening arguments of the metrics-server. Unde the args of metrics-server container:
       args:
-        - --kubelet-insecure-tls
-        - --cert-dir=/tmp
-        - --secure-port=4443
-        - --metric-resolution=10s
-        - --kubelet-preferred-address-types=InternalIP
-      ports:
-      .
-      .
-      . 
+        - --kubelet-insecure-tls \
+        - --cert-dir=/tmp \
+        - --secure-port=4443 \
+        - --metric-resolution=10s \
+        - --kubelet-preferred-address-types=InternalIP \ 
+      ports: \
+      . \
+      . \
+      .  \
 
 
 3. After the changes are made, create the deployment
