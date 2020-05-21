@@ -21,7 +21,7 @@ Once the cluster is installed, to set the metrics up and running,
       ports: \
       . \
       . \
-      .  \
+      . \
 
 
 3. After the changes are made, create the deployment
