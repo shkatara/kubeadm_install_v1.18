@@ -11,7 +11,7 @@ Once the cluster is installed, to set the metrics up and running,
 
 ###IMPORTANT###
 
-4. Change the listening arguments of the metrics-server. Unde the args of metrics-server container:
+4. Change the listening arguments of the metrics-server. Unde the args of metrics-server container: \
       args:
         - --kubelet-insecure-tls \
         - --cert-dir=/tmp \
